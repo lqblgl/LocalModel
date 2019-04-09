@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wy.local.localmodel">
+
+    <permission android:name="com.ryg.startbyremote"></permission>
+    <uses-permission android:name="com.ryg.startbyremote"></uses-permission>
+
+    <permission android:name="com.ryg.PROVIDER"></permission>
+    <uses-permission android:name="com.ryg.PROVIDER"></uses-permission>
+
+    <permission android:name="com.ryg.SERVICELOGIN"></permission>
+    <uses-permission android:name="com.ryg.SERVICELOGIN"></uses-permission>
+
+    <permission android:name="com.ryg.SERVICEPOOL"></permission>
+    <uses-permission android:name="com.ryg.SERVICEPOOL"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
